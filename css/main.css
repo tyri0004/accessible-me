@@ -160,6 +160,7 @@ form button {
   text-transform: uppercase;
 }
 
+/* clear sections for form and owner sections */
 .owner, .contact-section{
   background-color: #f5f5f5;   
   padding: 2rem;
