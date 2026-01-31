@@ -13,10 +13,18 @@
 </head>
 
 <body>
+  <!-- this navigation will be hidden unless the user tabs it -->
+  <nav class="skiplinks" role="navigation">
+    <ul>
+      <li><a href="#about-us">Skip to about us</a></li>
+      <li><a href="#meet-the-owner">Skip to meet the owner</a></li>
+      <li><a href="#form-contact">Skip to contact form</a></li>
+    </ul>
+  </nav>
   <!-- removes container div to add proper semantic formating -->
     <header role="banner" class="site-header">
       <!-- adds header to allow proper screen reading -->
-      <h1 role="heading">Jam Box Studios</h1>
+      <h1>Jam Box Studios</h1>
       <!-- adds nav for proper screen reading -->
       <nav role="navigation" class="main-nav">
         <ul>
@@ -27,15 +35,17 @@
         </ul>
       </nav>
       <!-- replaces img with site that works -->
-      <img src="https://picsum.photos/1200/900" class="banner">  
+      <img src="https://picsum.photos/1200/900" class="banner" alt="randomly generated scenery of cities and nature">  
     </header>
     <!-- adds main for proper screen reading -->
-    <main role="main" class="main-content">
+    <!-- adds id for specificity -->
+    <main role="main" class="main-content" id="about-us">
       <!-- changes h1 to h2 for structure -->
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
+      <!-- adds id for specificity -->
+      <div class="owner" id="meet-the-owner">
         <!-- changes h1 to h2 for structure -->
         <h2>Meet the owner</h2>
           <ul>
@@ -53,7 +63,7 @@
             B3T 0L0
           </p>
       </div>
-      <div class="contact-section">
+      <div class="contact-section" id="form-contact">
         <!-- changes h1 to h3 for structure -->
         <h3>Contact Us</h3>
         <form action="thanks.html">
