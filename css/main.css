@@ -53,15 +53,24 @@ body {
   /* removes grey background for visibility */
   margin: 0;
   padding: 0;
+  /* adds line height for better readibility */
+  line-height: 1.6;
+  /* to have a consistent background */
+  background-color: #fff;
+  /* for better contrast */
+  color: #222;
 }
+
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  /* for a better readibility */
+  line-height: 1.2; 
+  margin-top: 1.5;
+  margin-bottom: 0.75rem;
+  font-size: 2.4rem;
 }
 
 .container {
@@ -72,6 +81,24 @@ h6 {
 
 img {
   width: 100%;
+}
+
+.skiplinks ul{
+  list-style: none;
+  position: relative;
+}
+
+/* makes sure the link are out of the document and hidden */
+.skiplinks a{
+  position: absolute;
+  top: -10em;
+}
+
+/* brings the links back when they are in focus */
+.skiplinks a:focus{
+  color: white;
+  background-color: rgb(0, 0, 0);
+  top: 0em;
 }
 
 .main-nav ul {
