@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <!-- this navigation will be hidden unless the user tabs it -->
+  <!-- nav will be hidden unless user tabs -->
   <nav class="skiplinks" role="navigation">
     <ul>
       <li><a href="#about-us">Skip to about us</a></li>
@@ -83,7 +83,8 @@
           <label for="yourmessage">Your Message</label>
           <!-- adds id for text area and name for screen reader -->
           <textarea id="message" name="message"></textarea>
-          <button type="submit">Send</button>
+          <!-- adds aria label to the submit button for better accessibility -->
+          <button type="submit" aria-label="submit the form">Send</button>
         </form>
       </div>
     </main>
