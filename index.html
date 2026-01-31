@@ -48,11 +48,12 @@
       <div class="owner" id="meet-the-owner">
         <!-- changes h1 to h2 for structure -->
         <h2>Meet the owner</h2>
-          <ul>
-            <li>Name: John Doe</li>
-            <li>Title: CEO</li>
-            <li>Email: johnjoe@jambox.ca</li>
-            <li>Phone: 613-000-0000</li>
+        <!-- adds itemscope and itemprop schema for accessibility -->
+          <ul itemscope itemtype="https://schema.org/Person">
+            <li itemprop="name">Name: John Doe</li>
+            <li itemprop="jobTitle">Title: CEO</li>
+            <li itemprop="email">Email: johnjoe@jambox.ca</li>
+            <li itemprop="telephone">Phone: 613-000-0000</li>
           </ul>
           <!-- changes h1 to h3 for structure-->
         <h3>Address</h3>
@@ -73,7 +74,8 @@
           <input type="text" id="fullname" name="fullname" placeholder="Full Name">
           <!-- adds label for screen readers -->
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email">
+          <!-- changes input type to email -->
+          <input type="email" id="email" name="email" placeholder="Email">
           <!-- adds label for screen readers -->
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" placeholder="Subject">
