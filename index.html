@@ -5,29 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Me</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
-  
-<title>Accessible Me</title>
- 
 </head>
 
 <body>
-  <div class="container">
-    <div class="site-header">
+  <!-- removes container div to add proper semantic formating -->
+    <header class="site-header">
+      <!-- adds header to allow proper screen reading -->
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <!-- adds nav for proper screen reading -->
+      <nav class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
+      </nav>
       <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
+    </header>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
@@ -64,7 +64,6 @@
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
     </div>
-  </div>
 </body>
 
 </html>
