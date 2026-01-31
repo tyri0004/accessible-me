@@ -46,8 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
+/* adds css reset for consistency across all browsers */
+/* Main Css starts!!! */
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   /* removes grey background for visibility */
