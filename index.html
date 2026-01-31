@@ -57,12 +57,14 @@
         <!-- changes h1 to h3 for structure -->
         <h3>Contact Us</h3>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <!-- puts text in paragraph tag and puts the modern version of bold instead -->
-          <p><strong>Your Message</strong></p>
+          <!-- adds proper label for label tag for screen readers -->
+          <label for="fullname">Full Name</label>
+          <!-- adds ids for screenreader -->
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+          <input type="text" id="email" name="email" placeholder="Email">
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <!-- replaces paragraph tag with label for screen readers -->
+          <label for="yourmessage">Your Message</label>
           <textarea></textarea>
           <button type="submit">Send</button>
         </form>
